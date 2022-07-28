@@ -8,21 +8,21 @@ body:
     id: spec-name
     attributes:
       label: Name of specification
-      description: Name of specification
+      value: Name of specification
     validations:
       required: true
   - type: input
     id: spec-url
     attributes:
       label: URL of specification
-      description: URL of specification
+      value: https://www.w3.org/TR/...
     validations:
       required: true
   - type: input
     id: repo-issue
     attributes:
       label: URL for the issue
-      description: URL for the issue in your repository
+      value: https://github.com/w3c/..../issues
     validations:
       required: true
   - type: input
