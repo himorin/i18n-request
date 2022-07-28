@@ -4,25 +4,32 @@ title: Spec_name 2020-mm-dd
 labels: [ "REVIEW REQUESTED", SR, pending ]
 assignees: [ ]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        We have conducted a self-review of our spec:
+        some text can go here
+        ....
   - type: input
     id: spec-name
     attributes:
       label: Name of specification
-      value: Name of specification
+      description: Copy and paste title of your specification
+      placeholder: Name of specification
     validations:
       required: true
   - type: input
     id: spec-url
     attributes:
       label: URL of specification
-      value: https://www.w3.org/TR/...
+      placeholder: https://www.w3.org/TR/...
     validations:
       required: true
   - type: input
     id: repo-issue
     attributes:
       label: URL for the issue
-      value: https://github.com/w3c/..../issues
+      placeholder: https://github.com/w3c/..../issues
     validations:
       required: true
   - type: input
@@ -30,3 +37,6 @@ body:
     attributes:
       label: Do you need a reply by a particular date?
       description: If any date, type here
+  - type: textarea
+    attributes:
+      label: Other comments
