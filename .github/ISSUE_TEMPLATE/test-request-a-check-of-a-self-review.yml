@@ -1,0 +1,32 @@
+name: Request a check of a self-review
+description: If you have completed a self-review, use this form to request that i18n check it out.
+title: Spec_name 2020-mm-dd
+labels: 'REVIEW REQUESTED', SR, pending
+assignees: ''
+body:
+  - type: input
+    id: spec-name
+    attributes:
+      label: Name of specification
+      description: Name of specification
+    validations:
+      required: true
+  - type: input
+    id: spec-url
+    attributes:
+      label: URL of specification
+      description: URL of specification
+    validations:
+      required: true
+  - type: input
+    id: repo-issue
+    attributes:
+      label: URL for the issue
+      description: URL for the issue in your repository
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Do you need a reply by a particular date?
+      description: If any date, type here
